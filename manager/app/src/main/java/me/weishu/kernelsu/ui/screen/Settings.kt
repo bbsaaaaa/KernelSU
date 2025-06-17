@@ -200,9 +200,10 @@ fun SettingScreen(navigator: DestinationsNavigator) {
 
             val prefs = context.getSharedPreferences("settings", Context.MODE_PRIVATE)
             var checkUpdate by rememberSaveable {
-                mutableStateOf(
-                    prefs.getBoolean("check_update", true)
-                )
+                //mutableStateOf(
+                //    prefs.getBoolean("check_update", true)
+                //)
+                mutableStateOf(false)
             }
             SwitchItem(
                 icon = Icons.Filled.Update,
