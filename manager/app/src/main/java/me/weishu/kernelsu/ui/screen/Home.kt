@@ -100,9 +100,9 @@ fun HomeScreen(navigator: DestinationsNavigator) {
             if (checkUpdate) {
                 UpdateCard()
             }
-            InfoCard()
-            DonateCard()
-            LearnMoreCard()
+            //InfoCard()
+            //DonateCard()
+            //LearnMoreCard()
             Spacer(Modifier)
         }
     }
