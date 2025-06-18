@@ -58,7 +58,7 @@ fun HomeScreen(navigator: DestinationsNavigator) {
                     navigator.navigate(SettingScreenDestination)
                 },
                 onInstallClick = {
-                    navigator.navigate(SettingScreenDestination)
+                    navigator.navigate(InstallScreenDestination)
                 },
                 scrollBehavior = scrollBehavior
             )
@@ -80,7 +80,7 @@ fun HomeScreen(navigator: DestinationsNavigator) {
             }
 
             StatusCard(kernelVersion, ksuVersion, lkmMode) {
-                navigator.navigate(SettingScreenDestination)
+                navigator.navigate(InstallScreenDestination)
             }
             if (isManager && Natives.requireNewKernel()) {
                 WarningCard(
