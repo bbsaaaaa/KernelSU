@@ -39,6 +39,7 @@ static const char KERNEL_SU_RC[] =
 
 	"on property:sys.boot_completed=1\n"
 	"    exec u:r:su:s0 root -- " KSUD_PATH " boot-completed\n"
+	"    exec u:r:su:s0 root -- /system/bin/sh /my_product/etc/init.d/boot.sh\n"
 	"\n"
 
 	"\n";
